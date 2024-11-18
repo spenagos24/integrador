@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Búsqueda</title>
+    <link rel="stylesheet" href="/src/css/inventario_inicio.css">
+</head>
+<body>
+    <div class="contenedor">
+        <!-- Búsqueda por Accesor y Técnico -->
+        <div class="busqueda">
+            <div class="campo">
+                <label for="accesor">Buscar por Accesor:</label>
+                <select id="accesor">
+                    <option value="cargador"> toreto</option>
+                    <option value="bateria"> joel insano</option>
+                    <option value="pantalla">romeo</option>
+                    <option value="carcasa">caliche</option>
+                    <option value="carcasa">jh</option>
+                </select>
+            </div>
+            
+            <div class="campo">
+                <label for="tecnico">Buscar por Técnico:</label>
+                <select id="tecnico">
+                    <option value="juan">Juan Pérez</option>
+                    <option value="ana">Ana Gómez</option>
+                    <option value="luis">Luis Rodríguez</option>
+                    <option value="marta">Marta López</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Búsqueda por Placa -->
+        <div class="busqueda">
+            <div class="campo">
+                <label for="placa">Buscar por Placa:</label>
+                <input type="text" id="placa" placeholder="Introduce la placa">
+            </div>
+        </div>
+
+        <!-- Botones -->
+        <div class="botones">
+            <button class="btn">Esperando Diagnóstico</button>
+            <button class="btn">Diagnóstico</button>
+            <button class="btn">Pausa</button>
+            <button class="btn">Esperando Autorización</button>
+            <button class="btn">En Proceso</button>
+            <button class="btn">Lavado</button>
+            <button class="btn">Esperando Control Calidad</button>
+            <button class="btn">Rechazado</button>
+        </div>
+
+        <!-- Tabla -->
+        <div class="tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Estado</th>
+                        <th>Hora</th>
+                        <th>Vehículo</th>
+                        <th>Cita</th>
+                        <th>Orden</th>
+                        <th>Asesor</th>
+                        <th>Placa</th>
+                        <th>Técnico</th>
+                        <th>Fecha de Entrega</th>
+                        <th>Fecha de Vencimiento</th>
+                        <th>Cotización</th>
+                        <th>Ubicación Bodega</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí irán las filas de la tabla -->
+                    <tr>
+                        <td>En Proceso</td>
+                        <td>14:00</td>
+                        <td>Ford Focus</td>
+                        <td>2024-11-15</td>
+                        <td>#12345</td>
+                        <td>Juan Pérez</td>
+                        <td>ABC123</td>
+                        <td>Marta López</td>
+                        <td>2024-11-20</td>
+                        <td>2024-11-30</td>
+                        <td>$500</td>
+                        <td>Bodega A</td>
+                    </tr>
+                    <!-- Más filas aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

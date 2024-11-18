@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../css/perfil.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="contenedor">
+      <label for="izquierda" class="boton-menu">☰</label>
+      <img src="../img/logo.png" alt="" srcset="" width="30px">
+ 
+    </div>
+    <div class="izquierdo">
+      <button> <i class="fas fa-search"></i></button>
+      <button onclick="toggleNotifi()">
+        <i class="fa-solid fa-bell"></i>
+      </button>
+      <div class="notifi-box" id="box">
+        <h2>Notifications <span>6</span></h2>
+        <div class="notifi-item">
+          <img src="../img/hacker.png" alt="img">
+          <div class="text">
+            <h4>Elias Abdurrahman</h4>
+            <p>@lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+
+        <div class="notifi-item">
+          <img src="../img/actriz.png" alt="img">
+          <div class="text">
+            <h4>John Doe</h4>
+            <p>@lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+
+        <div class="notifi-item">
+          <img src="../img/hombre.png" alt="img">
+          <div class="text">
+            <h4>Emad Ali</h4>
+            <p>@lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+
+        <div class="notifi-item">
+          <img src="../img/mujer-de-negocios.png" alt="img">
+          <div class="text">
+            <h4>Ekram Abu </h4>
+            <p>@lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+
+        <div class="notifi-item">
+          <img src="../img/mujer.png" alt="img">
+          <div class="text">
+            <h4>Jane Doe</h4>
+            <p>@lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="notifi-item">
+          <img src="../img/nino.png" alt="img">
+          <div class="text">
+            <h4>Jane Doe</h4>
+            <p>@lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <label for="derecha">
+        <img src="../img/foto_perfil.jpg" alt="Foto de perfil">
+      </label>
+    </div>
+  </header>
+
+  <!--checkbox-->
+  <input type="checkbox" id="izquierda">
+  <input type="checkbox" id="derecha">
+  <!--barra lateral-->
+  <div class="barras">
+    <div class="izquierda-barra">
+      <nav id="">
+        <div class="cerrar-barra-izquierda">
+          <img src="../img/logo.png" alt="" srcset="" width="30px">
+          <label for="izquierda">
+            <ion-icon name="exit-outline"></ion-icon>
+          </label>
+        </div>
+        <div class="navegacion">
+          <ul>
+            <li onclick="location.href='../html/inicio.html'"><a href="#"><i class="fas fa-home"></i><span>Inicio</span></a></li>
+            <li><a href="#"><i class="fas fa-tools"></i><span>Taller</span></a></li>
+            <li><a href="#"><i class="fas fa-building"></i><span>Recepcion</span></a></li>
+      
+            <li onclick="location.href='../html/caja.html'"><a><i class="fas fa-cash-register"></i><span>Caja</span></a>
+            </li>
+            <li onclick="location.href='../html/encuesta.html'"><a><i class="fas fa-poll"></i><span>Encuesta</span></a>
+            </li>
+            <li onclick="location.href='../html/vehiculos.html'"><a><i
+                  class="fa-solid fa-car"></i><span>vehiculos</span></a></li>
+
+            <li onclick="location.href='../html/InventarioFotos.html'"><a href="#"><i
+                  class="fas fa-archive"></i><span>Inventario</span></a></li>
+            <li><a href="#"><i class="fas fa-address-book"></i><span>Contactos</span></a></li>
+            <li><a href="#"><i class="fas fa-cogs"></i><span>Configuraciones</span></a></li>
+
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+    <div class="derecha">
+      <div class="usuario">
+        <img src="../img/foto_perfil.jpg" alt="Foto de perfil" class="">
+        <h3>nombre de usuario</h3>
+        <p></p>
+        <label for="derecha"><i class="bi bi-box-arrow-left"></i></label>
+      </div>
+      <div class="descripción">
+
+        <p id="P">descripción<strong></strong></p>
+      </div>
+      <nav class="navegacion-derecha">
+        <ul class="ul">
+          <li onclick="location.href='../html/perfil.html'"><a><i class="fas fa-user"></i> <span>perfil</span></a></li>
+          <li><a href="#"><i class="fas fa-cog"></i> <span>configuraciones</span></a></li>
+          <li><a href="#"><i class="fas fa-bell"></i> <span>notificaciones</span></a></li>
+          <li onclick="location.href='../../index.html'" id="miBoton"><a><i class="fas fa-sign-out-alt"></i><span>cerrar
+                sesion</span></a></li>
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </div>
+ <div class="container">
+        <!-- Sidebar con perfil -->
+        <aside class="profile-sidebar">
+            <img src="/api/placeholder/150/150" alt="Foto de perfil" class="profile-image">
+            <h1 class="profile-name">Alex Johnson</h1>
+            <p class="profile-email">alex.johnson@ejemplo.com</p>
+            
+            <nav>
+                <ul class="profile-nav">
+                    <li class="profile-nav-item">
+                        <a class="profile-nav-link active" onclick="cambiarPagina('general')">
+                            👤 Descripción General
+                        </a>
+                    </li>
+                    <li class="profile-nav-item">
+                        <a class="profile-nav-link" onclick="cambiarPagina('editar')">
+                            ✏️ Editar Perfil
+                        </a>
+                    </li>
+                    <li class="profile-nav-item">
+                        <a class="profile-nav-link" onclick="cambiarPagina('password')">
+                            🔒 Cambiar Contraseña
+                        </a>
+                    </li>
+                    <li class="profile-nav-item">
+                        <a class="profile-nav-link" onclick="cambiarPagina('ajustes')">
+                            ⚙️ Ajustes
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Área de contenido principal -->
+        <main class="content-area">
+            <iframe id="contenido" name="contenido" src="about:blank"></iframe>
+        </main>
+    </div>
+
+    <script>
+        // Contenido de las páginas
+        const paginas = {
+            general: `
+                <div class="page-container">
+                    <h2 class="page-title">Descripción General</h2>
+                    <div class="form-group">
+                        <p><strong>Nombre:</strong> Alex Johnson</p>
+                        <p><strong>Email:</strong> alex.johnson@ejemplo.com</p>
+                        <p><strong>Ubicación:</strong> Barcelona, España</p>
+                        <p><strong>Miembro desde:</strong> Enero 2023</p>
+                        <p><strong>Último acceso:</strong> Hace 2 horas</p>
+                    </div>
+                    <div class="form-group">
+                        <h3>Biografía</h3>
+                        <p>Desarrollador web full-stack con más de 5 años de experiencia en tecnologías frontend y backend. Apasionado por crear experiencias de usuario excepcionales y soluciones escalables.</p>
+                    </div>
+                </div>
+            `,
+            editar: `
+                <div class="page-container">
+                    <h2 class="page-title">Editar Perfil</h2>
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" class="form-input" value="Alex Johnson">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-input" value="alex.johnson@ejemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Ubicación</label>
+                            <input type="text" class="form-input" value="Barcelona, España">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Biografía</label>
+                            <textarea class="form-input">Desarrollador web full-stack con más de 5 años de experiencia en tecnologías frontend y backend. Apasionado por crear experiencias de usuario excepcionales y soluciones escalables.</textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                    </form>
+                </div>
+            `,
+            password: `
+                <div class="page-container">
+                    <h2 class="page-title">Cambiar Contraseña</h2>
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Contraseña Actual</label>
+                            <input type="password" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Nueva Contraseña</label>
+                            <input type="password" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Confirmar Nueva Contraseña</label>
+                            <input type="password" class="form-input">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Actualizar Contraseña</button>
+                    </form>
+                </div>
+            `,
+            ajustes: `
+                <div class="page-container">
+                    <h2 class="page-title">Ajustes</h2>
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Idioma</label>
+                            <select class="form-input">
+                                <option>Español</option>
+                                <option>English</option>
+                                <option>Français</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Zona Horaria</label>
+                            <select class="form-input">
+                                <option>(GMT+01:00) Madrid</option>
+                                <option>(GMT+00:00) Londres</option>
+                                <option>(GMT-05:00) Nueva York</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">
+                                <input type="checkbox" checked> Recibir notificaciones por email
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">
+                                <input type="checkbox" checked> Perfil público
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar Preferencias</button>
+                    </form>
+                </div>
+            `
+        };
+
+        // Función para cambiar el contenido del iframe
+        function cambiarPagina(pagina) {
+            // Actualizar navegación
+            document.querySelectorAll('.profile-nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+
+            // Cambiar contenido del iframe
+            const iframe = document.getElementById('contenido');
+            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            
+            iframeDoc.open();
+            iframeDoc.write(`
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <style>
+                        ${document.querySelector('style').textContent}
+                    </style>
+                </head>
+                <body>
+                    ${paginas[pagina]}
+                </body>
+                </html>
+            `);
+            iframeDoc.close();
+        }
+
+        // Cargar la página inicial
+        window.onload = () => cambiarPagina('general');
+    </script>
+<script src="../js/notificacion.js"></script>
+</body>
+</html>

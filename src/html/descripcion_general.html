@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <style>
+        /* CSS Interno */
+
+         *{
+            font-family: georgia;
+            font-style: italic;
+            color: black;
+         }
+        body {
+            font-family: Arial, sans-serif;
+            background: url(/login/backgrond.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+        .contenedor {
+        
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 12px;
+            
+        }
+        .titulo {
+            text-align: center;
+            
+        }
+        .grupo_formulario {
+            margin-bottom: 15px;
+        }
+        .grupo_formulario label {
+            display: block;
+            margin-bottom: 5px;
+        
+        
+        }
+        .grupo_formulario input {
+            width: 100%;
+            padding: 10px 0;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #00BAD8;
+            outline: none;
+            color: #fff;
+
+        }
+        .boton_guardar {
+            width: 100%;
+            padding: 10px;
+            background-color: #00BAD8;
+            border: none;
+            border-radius: 5px;
+
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .boton_guardar:hover {
+            background-color: #1766a3;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h2 class="titulo">Detalles del perfil</h2>
+        <form>
+            <div class="grupo_formulario">
+                <label for="nombre">Nombre:</label>
+            <div>Juan Perez</div>
+            </div>
+            <div class="grupo_formulario">
+                <label for="compania">Compañía:</label>
+             <div>Servitec S.A</div>
+            </div>
+            <div class="grupo_formulario">
+                <label for="trabajo">Trabajo:</label>
+               <div>Mecanico</div>
+            </div>
+            <div class="grupo_formulario">
+                <label for="pais">País:</label>
+               <div>Colombia</div>
+            </div>
+            <div class="grupo_formulario">
+                <label for="direccion">Dirección:</label>
+                <div>calle:13</div>
+            </div>
+            <div class="grupo_formulario">
+                <label for="telefono">Teléfono:</label>
+             <div>3245678876</div>
+            </div>
+            <div class="grupo_formulario">
+                <label for="correo">Correo Electrónico:</label>
+               <div>juanperez@gmail.com</div>
+            </div>
+        
+        </form>
+    </div>
+</body>
+</html>

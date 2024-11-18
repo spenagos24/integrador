@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.container{
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 30px;
+ 
+}
+.container .tittle{
+  font-size: 25px;
+  font-weight: 800;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;  
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #03045e;
+}
+form .button {
+  height: 45px;
+  margin: 45px;
+}
+form .button button {
+  height: 100%;
+  width: 100%;
+   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #03045e;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  
+}
+button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #0077b6;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+  }
+  button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+  }
+  button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+  }
+  button span a{
+    text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+  }
+  button:hover span {
+  color: #03045e;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@media (max-width: 584px) {
+    .container{
+        max-width: 100%;
+ } 
+ form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+}
+form .gender-details .category{
+    width: 100%;
+}
+.container form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.user-details::-webkit-scrollbar{
+    width: 0;
+}
+}
