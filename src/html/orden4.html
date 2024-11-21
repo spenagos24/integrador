@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        :root {
+            --primary-blue: #1e3a8a;
+            --secondary-blue: #2563eb;
+            --light-blue: #dbeafe;
+            --lightest-blue: #eff6ff;
+        }
+
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+         
+            color: var(--primary-blue);
+            max-width: 100%;
+            min-height: 100%;
+        }
+        .contenedor_orden{
+            width: 1000px;
+            display: flex;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+           margin-left: 300px;
+
+        }
+        
+        .container {
+          
+            padding: 30px;
+            background:rgba(255, 255, 255, 0.1) ;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        #img{
+            position: absolute;
+             width: 500px;
+             margin-top: 200px;
+            opacity: 0.1;
+            z-index: -1;
+            
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--light-blue);
+        }
+        
+        .company-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .order-number {
+            border: 2px solid var(--secondary-blue);
+            padding: 15px 25px;
+            font-weight: bold;
+            border-radius: 8px;
+            color: var(--secondary-blue);
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255,0.1);
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary-blue);
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th, td {
+            border: 1px solid var(--light-blue);
+            padding: 12px;
+        }
+        
+        th {
+            background-color:rgba(255, 255, 255, 0.1) ;
+            color: white;
+            font-weight: 500;
+        }
+
+        thead tr:first-child th {
+            text-align: center;
+            font-size: 1.1em;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1) ;
+            color: #000;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1) ;
+            color: #2563eb;
+        }
+
+        .client-feel {
+            margin: 20px 0;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: var(--primary-blue);
+            padding: 10px 0;
+            border-bottom: 2px solid var(--light-blue);
+        }
+
+        .footer-total {
+            font-weight: bold;
+            text-align: right;
+            color: var(--primary-blue);
+        }
+
+        .filled-info {
+            color: var(--primary-blue);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+   
+   <div class="contenedor_orden">
+    <img src="../img/logo.png" alt="" width="" height="" id="img">
+    <div class="container">
+        <div class="header">
+            <div class="company-info">
+                <div class="logo">
+                    <img src="../img/logo.png" alt="Logo de la empresa" width="50px" height="50px">
+                </div>
+                <h1>SERVITEC</h1>
+            </div>
+            <div class="order-number">
+                Orden #: 24004
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="5">ORDEN DEl VEHICULO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Fecha de diagnóstico:</strong></td>
+                    <td><strong>Fecha de apertura:</strong></td>
+                    <td><strong>Fecha de entrega:</strong></td>
+                    <td colspan="2"><strong>Ubicación:</strong></td>
+                </tr>
+                <tr>
+                    <td class="filled-info">28/11/2024</td>
+                    <td class="filled-info">28/11/2024</td>
+                    <td class="filled-info">29/11/2024</td>
+                    <td colspan="2" class="filled-info">Bodega B</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="contact-info">
+            <p><strong>Has sido atendido por:</strong> <span class="filled-info">Gustavo Montoya</span></p>
+            <p><strong>Teléfono:</strong> <span class="filled-info">3021549078</span></p>
+            <p><strong>Email:</strong> <span class="filled-info">Gmontoya@servitec.com</span></p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="5">INFORMACIÓN DEL VEHÍCULO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Placa:</strong></td>
+                    <td><strong>Marca:</strong></td>
+                    <td><strong>Modelo:</strong></td>
+                    <td><strong>Año:</strong></td>
+                    <td><strong>Color:</strong></td>
+                </tr>
+                <tr>
+                    <td class="filled-info">LPU890</td>
+                    <td class="filled-info">Porsche</td>
+                    <td class="filled-info">718</td>
+                    <td class="filled-info">2024</td>
+                    <td class="filled-info">Blanco</td>
+                </tr>
+                <tr>
+                    <td><strong>Kilometraje:</strong></td>
+                    <td><strong>tecno:</strong></td>
+                    <td><strong>Motor:</strong></td>
+                    <td><strong>Combustible:</strong></td>
+                    <td><strong>Transmisión:</strong></td>
+                </tr>
+                <tr>
+                    <td class="filled-info">10.000 km</td>
+                    <td class="filled-info">1976HJ2633A123456</td>
+                    <td class="filled-info">3.0L</td>
+                    <td class="filled-info">Gasolina</td>
+                    <td class="filled-info">Automática</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="client-feel">EL SENTIR DEL CLIENTE</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Descripción</th>
+                    <th>Cantidad</th>
+                    <th>Valor</th>
+                    <th>Tiempo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="height: 100px;" class="filled-info">
+                        Realizar mantenimiento de 10.000kms, alinear y balancear
+                    </td>
+                    <td class="filled-info">1</td>
+                    <td class="filled-info">$350.00</td>
+                    <td class="filled-info">4 horas</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="footer-total">Total IVA incluido:</td>
+                    <td class="filled-info">$416.50</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Comprobaciones</title>
+    <link rel="stylesheet" href="/src/css/F.Inventario.css">
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="form-container">
+        <div class="logo-container">
+            <img src="/src/img/logo.png" width="150px"  height="150"  alt="Servitec">
+            <h1>servitec</h1>
+            <h1>Formulario Inventario del Vehículo</h1>
+        </div>
+
+    
+        <div class="form-group">
+            <label for="solicitudes">Solicitudes del cliente</label>
+            <input type="text" id="solicitudes" placeholder="Ejemplo: revisar aire acondicionado">
+        </div>
+
+        <div class="form-group">
+            <label for="novedad">Una novedad</label>
+            <input type="text" id="novedad" placeholder="Ejemplo: parabrisas malo">
+        </div>
+
+        <div class="section-title">Comprobaciones adicionales antes de entrar al taller</div>
+
+        <div class="form-group">
+            <label>Llavero:</label>
+            <div class="radio-options">
+                <input type="radio" id="llaveros-si" name="llaveros" value="si">
+                <label for="llaveros-si">Sí</label>
+                <input type="radio" id="llaveros-no" name="llaveros" value="no">
+                <label for="llaveros-no">No</label>
+        </div>
+        </div>
+        <div class="form-group">
+            <label>Tarjeta de propiedad:</label>
+            <div class="radio-options">
+                <input type="radio" id="tarjeta-si" name="Tarjeta de propiedad" value="si">
+                <label for="tarjeta-si">Sí</label>
+                <input type="radio" id="tarjeta-no" name="Tarjeta de propiedad" value="no">
+                <label for="tarjeta-no">No</label>
+        </div>
+        </div>
+
+        <div class="form-group">
+            <label>Manual de mantenimiento y garantía:</label>
+            <div class="radio-options">
+                <input type="radio" id="manual-si" name="Manual" value="si">
+                <label for="manual-si">Sí</label>
+                <input type="radio" id="manual-no" name="Manual" value="no">
+                <label for="manual-no">No</label>
+        </div>
+
+
+        </div>
+        <div class="checkbox-group">
+            <label> SOAT vigente</label>
+            <input type="text" placeholder="Fecha (Ejemplo: 30-12-28)">
+        </div>
+
+        <!-- Continúa agregando los campos según el formulario de la imagen -->
+
+        <div class="observations">
+            <label for="observations">Observaciones adicionales:</label>
+            <textarea id="observations" placeholder="Ejemplo: Traer vehículo limpio"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Radio:</label>
+                 <div class="radio-options">
+                <input type="radio" id="radio-si" name="Radio" value="si">
+                <label for="radio-si">Sí</label>
+                <input type="radio" id="radio-no" name="Radio" value="no">
+                <label for="radio-no">No</label>
+        </div>
+        </div>
+
+        <div class="form-group">
+            <label>Forros:</label>
+            <div class="radio-options">
+                <input type="radio" id="forros-si" name="forros" value="si">
+                <label for="forros-si">Sí</label>
+                <input type="radio" id="forros-no" name="forros" value="no">
+                <label for="forros-no">No</label>
+        </div>
+        </div>
+        
+        <div class="form-group">
+            <label>Tapetes:</label>
+            <div class="radio-options">
+                <input type="radio" id="tapetes-si" name="Tapetes" value="si">
+                <label for="tapetes-si">Sí</label>
+                <input type="radio" id="tapetes-no" name="Tapetes" value="no">
+                <label for="tapetes-no">No</label>
+        </div>
+        </div>
+
+
+        <div class="form-group">
+            <label>Plumillas:</label>
+            <div class="radio-options">
+                <input type="radio" id="plumillas-si" name="Plumillas" value="si">
+                <label for="plumillas-si">Sí</label>
+                <input type="radio" id="plumillas-no" name="Plumillas" value="no">
+                <label for="plumillas-no">No</label>
+        </div>
+        </div>
+
+        <div class="form-group">
+            <label>Espejos:</label>
+            <div class="radio-options">
+                <input type="radio" id="espejos-si" name="Espejos" value="si">
+                <label for="espejos-si">Sí</label>
+                <input type="radio" id="espejos-no" name="Espejos" value="no">
+                <label for="espejos-no">No</label>
+        </div>
+        </div>
+
+        <div class="form-group">
+            <label>Antena:</label>
+            <div class="radio-options">
+                <input type="radio" id="antena-si" name="antena" value="si">
+                <label for="antena-si">Sí</label>
+                <input type="radio" id="antena-no" name="antena" value="no">
+                <label for="antena-no">No</label>
+        </div>
+        </div>
+
+        <div class="form-group">
+            <label>Bandeja porta equipaje:</label>
+            <div class="radio-options">
+                <input type="radio" id="bandeja-si" name="Bandeja" value="si">
+                <label for="bandeja-si">Sí</label>
+                <input type="radio" id="bandeja-no" name="Bandeja" value="no">
+                <label for="bandeja-no">No</label>
+        </div>
+        </div>
+
+        <div class="form-group">
+            <label>Herramienta:</label>
+            <div class="radio-options">
+                <input type="radio" id="herramienta-si" name="Herramienta" value="si">
+                <label for="herramienta-si">Sí</label>
+                <input type="radio" id="herramienta-no" name="Herramienta" value="no">
+                <label for="herramienta-no">No</label>
+        </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <label>Gato palanca:</label>
+            <div class="radio-options">
+                <input type="radio" id="gato-si" name="Gato palanca" value="si">
+                <label for="gato-si">Sí</label>
+                <input type="radio" id="gato-no" name="Gato palanca" value="no">
+                <label for="gato-no">No</label>
+        </div>
+        </div>
+
+
+        <div class="form-group">
+            <label>Pernos antirrobo:</label>
+            <div class="radio-options">
+                <input type="radio" id="pernos-si" name="Pernos" value="si">
+                <label for="pernos-si">Sí</label>
+                <input type="radio" id="pernos-no" name="Pernos" value="no">
+                <label for="pernos-no">No</label>
+        </div>
+        </div>
+
+        <div class="form-group">
+            <label>Llanta de repuestos:</label>
+            <div class="radio-options">
+                <input type="radio" id="Llanta-si" name="Llanta Repuesto" value="si">
+                <label for="Llanta-si">Sí</label>
+                <input type="radio" id="Llanta-no" name="Llanta Repuesto" value="no">
+                <label for="Llanta-no">No</label>
+        </div>
+        </div>
+
+        <div class="form-group">
+            <label>E-Tech: cable(s) de carga:</label>
+            <div class="radio-options">
+                <input type="radio" id="cable-si" name="E-Tech: cable(s) de carga" value="si">
+                <label for="cable-si">Sí</label>
+                <input type="radio" id="cable-no" name="E-Tech: cable(s) de carga" value="no">
+                <label for="cable-no">No</label>
+        </div>
+        </div>
+
+
+        <div class="form-group">
+            <label>Kit de carretera:</label>
+            <div class="radio-options">
+                <input type="radio" id="Kit-si" name="Kit de carretera" value="si">
+                <label for="Kit-si">Sí</label>
+                <input type="radio" id="Kit-no" name="Kit de carretera" value="no">
+                <label for="Kit-no">No</label>
+        </div>
+        </div>
+
+        <div class="form-group">
+            <label for="extintor">Fecha vencimiento del extintor</label>
+            <input type="text" id="extintor" placeholder="ejemplo:vigente">
+        </div>
+
+        <div class="form-footer">
+            <button type="submit">Enviar</button>
+        </div>
+   
+        
+        
+    </div>
+</body>
+</html>

@@ -40,47 +40,47 @@
         <div class="notifi-item">
           <img src="../img/hacker.png" alt="img">
           <div class="text">
-            <h4>Elias Abdurrahman</h4>
-            <p>@lorem ipsum dolor sit amet</p>
+            <h4>Gustavo Montoya @Asesor </h4>
+            <p>Registra vehículo TKD125</p>
           </div>
         </div>
 
         <div class="notifi-item">
           <img src="../img/actriz.png" alt="img">
           <div class="text">
-            <h4>John Doe</h4>
-            <p>@lorem ipsum dolor sit amet</p>
+            <h4>Joel Insano @Tecnico</h4>
+            <p>Inicia Proceso vehíulo IFT178</p>
           </div>
         </div>
 
         <div class="notifi-item">
           <img src="../img/hombre.png" alt="img">
           <div class="text">
-            <h4>Emad Ali</h4>
-            <p>@lorem ipsum dolor sit amet</p>
+            <h4>Sebastian Penagos @Calidad</h4>
+            <p>@aprueba Vehículo LUP890</p>
           </div>
         </div>
 
         <div class="notifi-item">
           <img src="../img/mujer-de-negocios.png" alt="img">
           <div class="text">
-            <h4>Ekram Abu </h4>
-            <p>@lorem ipsum dolor sit amet</p>
+            <h4>Andrea Torres @Facturacion</h4>
+            <p>Vehículo facturado SBG625</p>
           </div>
         </div>
 
         <div class="notifi-item">
           <img src="../img/mujer.png" alt="img">
           <div class="text">
-            <h4>Jane Doe</h4>
-            <p>@lorem ipsum dolor sit amet</p>
+            <h4>Jane Diaz @Asesor</h4>
+            <p>Ingresa vehículo MLY676</p>
           </div>
         </div>
         <div class="notifi-item">
           <img src="../img/nino.png" alt="img">
           <div class="text">
-            <h4>Jane Doe</h4>
-            <p>@lorem ipsum dolor sit amet</p>
+            <h4>Jhon Valencia @Mecanico</h4>
+            <p>Envia cotizacion PFD481</p>
           </div>
         </div>
 
@@ -97,6 +97,7 @@
   <!--checkbox-->
   <input type="checkbox" id="izquierda">
   <input type="checkbox" id="derecha">
+  <input type="checkbox" name="" id="abrir_modal">
   <!--barra lateral-->
   <div class="barras">
     <div class="izquierda-barra">
@@ -110,22 +111,27 @@
         <div class="navegacion">
           <ul>
             <li onclick="location.href='../html/inicio.html'"><a href=""><i class="fas fa-home"></i><span>Inicio</span></a></li>
-            <li><a href="#"><i class="fas fa-tools"></i><span>Taller</span></a></li>
-            <li><a href="#"><i class="fas fa-building"></i><span>Recepcion</span></a></li>
+            <li><a href="/src/html/estados.html"><i class="fas fa-tools"></i><span>Taller</span></a></li>
+            <li onclick="location.href='../html/F.InventarioVehiculos.html'"><a href="F.InventarioVehiculos.html"><i class="fas fa-building"></i><span>Recepcion</span></a></li>
       
             <li onclick="location.href='../html/caja.html'"><a><i class="fas fa-cash-register"></i><span>Caja</span></a>
             </li>
-            <li onclick="location.href='../html/encuesta.html'"><a><i class="fas fa-poll"></i><span>Encuesta</span></a>
-            </li>
+         
             <li onclick="location.href='../html/vehiculos.html'"><a><i
                   class="fa-solid fa-car"></i><span>vehiculos</span></a></li>
 
             <li onclick="location.href='../html/InventarioFotos.html'"><a href="#"><i
                   class="fas fa-archive"></i><span>Inventario</span></a></li>
-            <li><a href="#"><i class="fas fa-address-book"></i><span>Contactos</span></a></li>
+            <li><a href="#"><i class="fas fa-address-book"></i><span>Cambiar Estados</span></a></li>
             <li><a href="#"><i class="fas fa-cogs"></i><span>Configuraciones</span></a></li>
-
+            <li>
+              <label for="abrir_modal"><a><i class="fas fa-poll"></i><span>Encuesta</span></a></label>
+            </li><!--acá está el modal para enviar la encuesta -->
           </ul>
+          <label for="abrir_modal" id="siuu">
+            <li><a><i class="fas fa-poll"></i><span>Encuesta</span></a>
+            </li>
+          </label>
 
         </div>
       </nav>
@@ -145,7 +151,7 @@
         <ul class="ul">
           <li onclick="location.href='../html/perfil.html'"><a><i class="fas fa-user"></i> <span>perfil</span></a></li>
           <li><a href="#"><i class="fas fa-cog"></i> <span>configuraciones</span></a></li>
-          <li><a href="#"><i class="fas fa-bell"></i> <span>notificaciones</span></a></li>
+          <li onclick="location.href='../html/notificaciones_insanas.html'"><a href="#"><i class="fas fa-bell"></i> <span>notificaciones</span></a></li>
           <li onclick="location.href='../../index.html'" id="miBoton"><a><i class="fas fa-sign-out-alt"></i><span>cerrar
                 sesion</span></a></li>
         </ul>
@@ -156,7 +162,7 @@
 
   </div>
   <!---->
-  <!-- trabajando en esta parte-->
+  <!--bloque de bienvenida-->
   <div class="bienvenida">
     <div id="bloque_divisor">
       <div class="grid-container">
@@ -197,6 +203,18 @@
     </div>
   </div>
 
+  <div class="contenedor_encuesta">
+    <div class="encuesta">
+      <div class="nombre_encuesta">
+        <h2>ENCUESTA</h2>
+      </div>
+      <div class="formulario_encuesta">
+        <label for="">correo</label>
+        <input type="text" placeholder="ingrese el correo al que desea enviar la encuesta">
+        <label for="abrir_modal"> enviar encuesta</label>
+      </div>
+    </div>
+  </div>
 
   <script src="../js/notificacion.js"></script>
   <script src="../js/script.js"></script>

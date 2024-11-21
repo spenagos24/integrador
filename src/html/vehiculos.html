@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/galeria.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vehiculos</title>
 
 </head>
 <body>
@@ -19,63 +19,61 @@
           <img src="../img/logo.png" alt="" srcset="" width="30px">
                 <span>Servitec</span>
            </div>
-      <div class="izquierdo">
+           <div class="izquierdo">
             <button> <i class="fas fa-search"></i></button>
             <button onclick="toggleNotifi()">
-             <div class="icon">
-               <i class="fa-solid fa-bell"></i>
-             </div>
-           </button>
-             <div class="notifi-box" id="box">
-               <h2>Notifications <span>6</span></h2>
-               <div class="notifi-item">
-                 <img src="/imagenes/hacker.png" alt="img">
-                 <div class="text">
-                    <h4>Elias Abdurrahman</h4>
-                    <p>@lorem ipsum dolor sit amet</p>
-                   </div> 
-               </div>
-         
-               <div class="notifi-item">
-                 <img src="/imagenes/actriz.png" alt="img">
-                 <div class="text">
-                    <h4>John Doe</h4>
-                    <p>@lorem ipsum dolor sit amet</p>
-                   </div> 
-               </div>
-         
-               <div class="notifi-item">
-                 <img src="/imagenes/hombre.png" alt="img">
-                 <div class="text">
-                    <h4>Emad Ali</h4>
-                    <p>@lorem ipsum dolor sit amet</p>
-                   </div> 
-               </div>
-         
-               <div class="notifi-item">
-                 <img src="/imagenes/mujer-de-negocios.png" alt="img">
-                 <div class="text">
-                    <h4>Ekram Abu </h4>
-                    <p>@lorem ipsum dolor sit amet</p>
-                   </div> 
-               </div>
-         
-               <div class="notifi-item">
-                 <img src="/imagenes/mujer.png" alt="img">
-                 <div class="text">
-                    <h4>Jane Doe</h4>
-                    <p>@lorem ipsum dolor sit amet</p>
-                   </div> 
-               </div>
-               <div class="notifi-item">
-                 <img src="/imagenes/nino.png" alt="img">
-                 <div class="text">
-                    <h4>Jane Doe</h4>
-                    <p>@lorem ipsum dolor sit amet</p>
-                   </div> 
-               </div>
-         
-             </div>
+              <i class="fa-solid fa-bell"></i>
+            </button>
+            <div class="notifi-box" id="box">
+              <h2>Notifications <span>6</span></h2>
+              <div class="notifi-item">
+                <img src="../img/hacker.png" alt="img">
+                <div class="text">
+                  <h4>Gustavo Montoya @Asesor </h4>
+                  <p>Registra vehículo TKD125</p>
+                </div>
+              </div>
+      
+              <div class="notifi-item">
+                <img src="../img/actriz.png" alt="img">
+                <div class="text">
+                  <h4>Joel Insano @Tecnico</h4>
+                  <p>Inicia Proceso vehíulo IFT178</p>
+                </div>
+              </div>
+      
+              <div class="notifi-item">
+                <img src="../img/hombre.png" alt="img">
+                <div class="text">
+                  <h4>Sebastian Penagos @Calidad</h4>
+                  <p>@aprueba Vehículo LUP890</p>
+                </div>
+              </div>
+      
+              <div class="notifi-item">
+                <img src="../img/mujer-de-negocios.png" alt="img">
+                <div class="text">
+                  <h4>Andrea Torres @Facturacion</h4>
+                  <p>Vehículo facturado SBG625</p>
+                </div>
+              </div>
+      
+              <div class="notifi-item">
+                <img src="../img/mujer.png" alt="img">
+                <div class="text">
+                  <h4>Jane Diaz @Asesor</h4>
+                  <p>Ingresa vehículo MLY676</p>
+                </div>
+              </div>
+              <div class="notifi-item">
+                <img src="../img/nino.png" alt="img">
+                <div class="text">
+                  <h4>Jhon Valencia @Mecanico</h4>
+                  <p>Envia cotizacion PFD481</p>
+                </div>
+              </div>
+      
+            </div>
        
      
          
@@ -101,13 +99,13 @@
            <div class="navegacion">
              <ul>
      <li onclick="location.href='../html/inicio.html'"><a href="#"><i class="fas fa-home"></i><span>Inicio</span></a></li>
-     <li><a href="#"><i class="fas fa-tools"></i><span>Taller</span></a></li>
-     <li><a href="#"><i class="fas fa-building"></i><span>Administración</span></a></li>
+     <li><a href="/src/html/estados.html"><i class="fas fa-tools"></i><span>Taller</span></a></li>
+     <li><a href="/src/html/F.InventarioVehiculos.html"><i class="fas fa-building"></i><span>Recepcion</span></a></li>
      <li onclick="location.href='../html/caja.html'"><a><i class="fas fa-cash-register"></i><span>Caja</span></a></li>
      <li  onclick="location.href='../html/encuesta.html'"><a ><i class="fas fa-poll"></i><span>Encuesta</span></a></li>
      
      <li onclick="location.href='../html/InventarioFotos.html'"><a href="#"><i class="fas fa-archive"></i><span>Inventario</span></a></li>
-     <li><a href="#"><i class="fas fa-address-book"></i><span>Contactos</span></a></li>
+     <li><a href="#"><i class="fas fa-address-book"></i><span>Cambiar Estados</span></a></li>
      <li><a href="#"><i class="fas fa-cogs"></i><span>Configuraciones</span></a></li>
      
          </ul>
@@ -130,7 +128,7 @@
            <ul class="ul">
        <li  onclick="location.href='../html/perfil.html'"><a><i class="fas fa-user"></i> <span>perfil</span></a></li>
        <li><a href="#"><i class="fas fa-cog"></i> <span>configuraciones</span></a></li>
-       <li><a href="#"><i class="fas fa-bell"></i> <span>notificaciones</span></a></li>
+       <li onclick="location.href='../html/notificaciones_insanas.html'"><a href="#"><i class="fas fa-bell"></i> <span>notificaciones</span></a></li>
        <li onclick="location.href='../../index.html'" id="miBoton"><a  ><i class="fas fa-sign-out-alt"></i><span >cerrar sesion</span></a></li>
      </ul>
      
@@ -142,8 +140,8 @@
        <main>
         <section class="secioninventario">
             <div class="veniculo1">
-              <i class="fa-solid fa-image"></i>
-                <img src="../imagenes inventario/foto1.jpg" alt="">
+          <a href="../html/InventarioFotos.html#stepwey ">
+            <img src="../imagenes inventario/foto1.jpg" alt="foto1"></a>
              
                 <fieldset disabled="disabled">
                   <legend>
@@ -186,12 +184,13 @@
                     <div>
                         1000
                     </div>
-                  </div>
-                  <a href="../html/InventarioFotos.html#stepwey " id="boton_inventario">ver Fotos</a>
+                  </div>   <!-- enlace que debe copiar-->
+                  
                 </fieldset>
             </div>
             <div class="veniculo1">
-                <img src="../imagenes inventario/Mustang GT-1.webp" alt="">
+
+                <a href="../html/InventarioFotos.html#Mustang GT "><img src="../imagenes inventario/Mustang GT-1.webp" alt=""></a>
                 <fieldset disabled="disabled">
                   <legend>
                     detalles de vehiculo
@@ -232,11 +231,10 @@
                         500
                     </div>
                   </div>
-                  <a href="../html/InventarioFotos.html#Mustang GT " id="boton_inventario">ver Fotos</a> 
-                </fieldset>
+                 </fieldset>
             </div>
             <div class="veniculo1">
-                <img src="../imagenes inventario/3.webp" alt="">
+                <a href="../html/InventarioFotos.html#porsche  "><img src="../imagenes inventario/3.webp" alt=""></a>
                 <fieldset disabled="disabled">
                   <legend>
                     detalles de vehiculo
@@ -277,11 +275,10 @@
                         480
                     </div>
                   </div>
-                  <a href="../html/InventarioFotos.html#porsche  " id="boton_inventario">ver Fotos</a>  
                 </fieldset>
             </div>
             <div class="veniculo1">
-                <img src="../imagenes inventario/PorscheGT1.webp" alt="">
+                <a href="../html/InventarioFotos.html#Porsche718  "><img src="../imagenes inventario/PorscheGT1.webp" alt=""></a>
                 <fieldset disabled="disabled">
                   <legend>
                     detalles de vehiculo
@@ -321,12 +318,11 @@
                     <div>
                        450
                     </div>
-                  </div>
-                  <a href="../html/InventarioFotos.html#Porsche718  " id="boton_inventario">ver Fotos</a>    
+                  </div> 
                 </fieldset>
             </div>
             <div class="veniculo1">
-                <img src="../imagenes inventario/AudiA4-1.webp" alt="">
+                <a href="../html/InventarioFotos.html#AudiA4  "><img src="../imagenes inventario/AudiA4-1.webp" alt=""></a>
                 <fieldset disabled="disabled">
                   <legend>
                     detalles de vehiculo
@@ -366,12 +362,11 @@
                     <div>
                         220
                     </div>
-                  </div>
-                  <a href="../html/InventarioFotos.html#AudiA4  " id="boton_inventario">ver Fotos</a>      
+                  </div>      
                 </fieldset>
             </div>
             <div class="veniculo1">
-                <img src="../imagenes inventario/ToyotaH-1.webp" alt="">
+                <a href="../html/InventarioFotos.html#ToyotaHilux  "><img src="../imagenes inventario/ToyotaH-1.webp" alt=""></a>
                 <fieldset disabled="disabled">
                   <legend>
                     detalles de vehiculo
@@ -411,13 +406,12 @@
                     <div>
                         202
                     </div>
-                  </div>
-                  <a href="../html/InventarioFotos.html#ToyotaHilux  " id="boton_inventario">ver Fotos</a>        
+                  </div>        
                 </fieldset>
             </div>
 
             <div class="veniculo1">
-              <img src="../imagenes inventario/Mercedes450-1.webp" alt="">
+              <a href="../html/InventarioFotos.html#Mercedes450 "><img src="../imagenes inventario/Mercedes450-1.webp" alt=""></a>
               <fieldset disabled="disabled">
                 <legend>
                   detalles de vehiculo
@@ -457,13 +451,12 @@
                   <div>
                       362
                   </div>
-                </div>
-                <a href="../html/InventarioFotos.html#Mercedes450 " id="boton_inventario">ver Fotos</a>        
+                </div>        
               </fieldset>
           </div>
 
           <div class="veniculo1">
-            <img src="../imagenes inventario/Volkswagen-1.webp" alt="">
+            <a href="../html/InventarioFotos.html#Volkswagen "><img src="../imagenes inventario/Volkswagen-1.webp" alt=""></a>
             <fieldset disabled="disabled">
               <legend>
                 detalles de vehiculo
@@ -503,8 +496,7 @@
                 <div>
                     150
                 </div>
-              </div>
-              <a href="../html/InventarioFotos.html#Volkswagen " id="boton_inventario">ver Fotos</a>        
+              </div>        
             </fieldset>
         </div>
   

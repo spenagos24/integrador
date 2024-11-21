@@ -23,47 +23,47 @@
         <div class="notifi-item">
           <img src="../img/hacker.png" alt="img">
           <div class="text">
-            <h4>Elias Abdurrahman</h4>
-            <p>@lorem ipsum dolor sit amet</p>
+            <h4>Gustavo Montoya @Asesor </h4>
+            <p>Registra vehículo TKD125</p>
           </div>
         </div>
 
         <div class="notifi-item">
           <img src="../img/actriz.png" alt="img">
           <div class="text">
-            <h4>John Doe</h4>
-            <p>@lorem ipsum dolor sit amet</p>
+            <h4>Joel Insano @Tecnico</h4>
+            <p>Inicia Proceso vehíulo IFT178</p>
           </div>
         </div>
 
         <div class="notifi-item">
           <img src="../img/hombre.png" alt="img">
           <div class="text">
-            <h4>Emad Ali</h4>
-            <p>@lorem ipsum dolor sit amet</p>
+            <h4>Sebastian Penagos @Calidad</h4>
+            <p>@aprueba Vehículo LUP890</p>
           </div>
         </div>
 
         <div class="notifi-item">
           <img src="../img/mujer-de-negocios.png" alt="img">
           <div class="text">
-            <h4>Ekram Abu </h4>
-            <p>@lorem ipsum dolor sit amet</p>
+            <h4>Andrea Torres @Facturacion</h4>
+            <p>Vehículo facturado SBG625</p>
           </div>
         </div>
 
         <div class="notifi-item">
           <img src="../img/mujer.png" alt="img">
           <div class="text">
-            <h4>Jane Doe</h4>
-            <p>@lorem ipsum dolor sit amet</p>
+            <h4>Jane Diaz @Asesor</h4>
+            <p>Ingresa vehículo MLY676</p>
           </div>
         </div>
         <div class="notifi-item">
           <img src="../img/nino.png" alt="img">
           <div class="text">
-            <h4>Jane Doe</h4>
-            <p>@lorem ipsum dolor sit amet</p>
+            <h4>Jhon Valencia @Mecanico</h4>
+            <p>Envia cotizacion PFD481</p>
           </div>
         </div>
 
@@ -93,8 +93,8 @@
         <div class="navegacion">
           <ul>
             <li onclick="location.href='../html/inicio.html'"><a href="#"><i class="fas fa-home"></i><span>Inicio</span></a></li>
-            <li><a href="#"><i class="fas fa-tools"></i><span>Taller</span></a></li>
-            <li><a href="#"><i class="fas fa-building"></i><span>Recepcion</span></a></li>
+            <li><a href="/src/html/estados.html"><i class="fas fa-tools"></i><span>Taller</span></a></li>
+            <li><a href="/src/html/F.InventarioVehiculos.html"><i class="fas fa-building"></i><span>Recepcion</span></a></li>
       
             <li onclick="location.href='../html/caja.html'"><a><i class="fas fa-cash-register"></i><span>Caja</span></a>
             </li>
@@ -128,7 +128,7 @@
         <ul class="ul">
           <li onclick="location.href='../html/perfil.html'"><a><i class="fas fa-user"></i> <span>perfil</span></a></li>
           <li><a href="#"><i class="fas fa-cog"></i> <span>configuraciones</span></a></li>
-          <li><a href="#"><i class="fas fa-bell"></i> <span>notificaciones</span></a></li>
+          <li onclick="location.href='../html/notificaciones_insanas.html'"><a href="#"><i class="fas fa-bell"></i> <span>notificaciones</span></a></li>
           <li onclick="location.href='../../index.html'" id="miBoton"><a><i class="fas fa-sign-out-alt"></i><span>cerrar
                 sesion</span></a></li>
         </ul>
@@ -138,176 +138,159 @@
     </div>
 
   </div>
- <div class="container">
-        <!-- Sidebar con perfil -->
-        <aside class="profile-sidebar">
-            <img src="/api/placeholder/150/150" alt="Foto de perfil" class="profile-image">
-            <h1 class="profile-name">Alex Johnson</h1>
-            <p class="profile-email">alex.johnson@ejemplo.com</p>
-            
-            <nav>
-                <ul class="profile-nav">
-                    <li class="profile-nav-item">
-                        <a class="profile-nav-link active" onclick="cambiarPagina('general')">
-                            👤 Descripción General
-                        </a>
-                    </li>
-                    <li class="profile-nav-item">
-                        <a class="profile-nav-link" onclick="cambiarPagina('editar')">
-                            ✏️ Editar Perfil
-                        </a>
-                    </li>
-                    <li class="profile-nav-item">
-                        <a class="profile-nav-link" onclick="cambiarPagina('password')">
-                            🔒 Cambiar Contraseña
-                        </a>
-                    </li>
-                    <li class="profile-nav-item">
-                        <a class="profile-nav-link" onclick="cambiarPagina('ajustes')">
-                            ⚙️ Ajustes
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+  <div class="container">
+    <!-- Sidebar con perfil -->
+    <aside class="profile-sidebar">
+        <img src="/api/placeholder/150/150" alt="Foto de perfil" class="profile-image">
+        <h1 class="profile-name">Alex Johnson</h1>
+        <p class="profile-email">alex.johnson@ejemplo.com</p>
+        
+        <nav>
+            <ul class="profile-nav">
+                <li class="profile-nav-item">
+                    <a class="profile-nav-link active" onclick="cambiarPagina('general')">
+                        👤 Descripción General
+                    </a>
+                </li>
+                <li class="profile-nav-item">
+                    <a class="profile-nav-link" onclick="cambiarPagina('editar')">
+                        ✏️ Editar Perfil
+                    </a>
+                </li>
+                <li class="profile-nav-item">
+                    <a class="profile-nav-link" onclick="cambiarPagina('password')">
+                        🔒 Cambiar Contraseña
+                    </a>
+                </li>
+                <li class="profile-nav-item">
+                    <a class="profile-nav-link" onclick="cambiarPagina('ajustes')">
+                        ⚙️ Ajustes
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
 
-        <!-- Área de contenido principal -->
-        <main class="content-area">
-            <iframe id="contenido" name="contenido" src="about:blank"></iframe>
-        </main>
-    </div>
+    <!-- Área de contenido principal -->
+    <main id="content-area" class="content-area">
+        <!-- El contenido se insertará aquí -->
+    </main>
+</div>
 
-    <script>
-        // Contenido de las páginas
-        const paginas = {
-            general: `
-                <div class="page-container">
-                    <h2 class="page-title">Descripción General</h2>
+<script>
+    // Contenido de las páginas
+    const paginas = {
+        general: `
+            <div class="page-container">
+                <h2 class="page-title">Descripción General</h2>
+                <div class="form-group">
+                    <p><strong>Nombre:</strong> Alex Johnson</p>
+                    <p><strong>Email:</strong> alex.johnson@ejemplo.com</p>
+                    <p><strong>Ubicación:</strong> Barcelona, España</p>
+                    <p><strong>Miembro desde:</strong> Enero 2023</p>
+                    <p><strong>Último acceso:</strong> Hace 2 horas</p>
+                </div>
+                <div class="form-group">
+                    <h3>Biografía</h3>
+                    <p>Desarrollador web full-stack con más de 5 años de experiencia en tecnologías frontend y backend. Apasionado por crear experiencias de usuario excepcionales y soluciones escalables.</p>
+                </div>
+            </div>
+        `,
+        editar: `
+            <div class="page-container">
+                <h2 class="page-title">Editar Perfil</h2>
+                <form>
                     <div class="form-group">
-                        <p><strong>Nombre:</strong> Alex Johnson</p>
-                        <p><strong>Email:</strong> alex.johnson@ejemplo.com</p>
-                        <p><strong>Ubicación:</strong> Barcelona, España</p>
-                        <p><strong>Miembro desde:</strong> Enero 2023</p>
-                        <p><strong>Último acceso:</strong> Hace 2 horas</p>
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-input" value="Alex Johnson">
                     </div>
                     <div class="form-group">
-                        <h3>Biografía</h3>
-                        <p>Desarrollador web full-stack con más de 5 años de experiencia en tecnologías frontend y backend. Apasionado por crear experiencias de usuario excepcionales y soluciones escalables.</p>
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-input" value="alex.johnson@ejemplo.com">
                     </div>
-                </div>
-            `,
-            editar: `
-                <div class="page-container">
-                    <h2 class="page-title">Editar Perfil</h2>
-                    <form>
-                        <div class="form-group">
-                            <label class="form-label">Nombre</label>
-                            <input type="text" class="form-input" value="Alex Johnson">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-input" value="alex.johnson@ejemplo.com">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Ubicación</label>
-                            <input type="text" class="form-input" value="Barcelona, España">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Biografía</label>
-                            <textarea class="form-input">Desarrollador web full-stack con más de 5 años de experiencia en tecnologías frontend y backend. Apasionado por crear experiencias de usuario excepcionales y soluciones escalables.</textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-                    </form>
-                </div>
-            `,
-            password: `
-                <div class="page-container">
-                    <h2 class="page-title">Cambiar Contraseña</h2>
-                    <form>
-                        <div class="form-group">
-                            <label class="form-label">Contraseña Actual</label>
-                            <input type="password" class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Nueva Contraseña</label>
-                            <input type="password" class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Confirmar Nueva Contraseña</label>
-                            <input type="password" class="form-input">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Actualizar Contraseña</button>
-                    </form>
-                </div>
-            `,
-            ajustes: `
-                <div class="page-container">
-                    <h2 class="page-title">Ajustes</h2>
-                    <form>
-                        <div class="form-group">
-                            <label class="form-label">Idioma</label>
-                            <select class="form-input">
-                                <option>Español</option>
-                                <option>English</option>
-                                <option>Français</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">Zona Horaria</label>
-                            <select class="form-input">
-                                <option>(GMT+01:00) Madrid</option>
-                                <option>(GMT+00:00) Londres</option>
-                                <option>(GMT-05:00) Nueva York</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">
-                                <input type="checkbox" checked> Recibir notificaciones por email
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label">
-                                <input type="checkbox" checked> Perfil público
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Guardar Preferencias</button>
-                    </form>
-                </div>
-            `
-        };
+                    <div class="form-group">
+                        <label class="form-label">Ubicación</label>
+                        <input type="text" class="form-input" value="Barcelona, España">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Biografía</label>
+                        <textarea class="form-input" style></textarea>
+           </div>
+                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                </form>
+            </div>
+        `,
+        password: `
+            <div class="page-container">
+                <h2 class="page-title">Cambiar Contraseña</h2>
+                <form>
+                    <div class="form-group">
+                        <label class="form-label">Contraseña Actual</label>
+                        <input type="password" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Nueva Contraseña</label>
+                        <input type="password" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Confirmar Nueva Contraseña</label>
+                        <input type="password" class="form-input">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Actualizar Contraseña</button>
+                </form>
+            </div>
+        `,
+        ajustes: `
+            <div class="page-container">
+                <h2 class="page-title">Ajustes</h2>
+                <form>
+                    <div class="form-group">
+                        <label class="form-label">Idioma</label>
+                        <select class="form-input">
+                            <option>Español</option>
+                            <option>English</option>
+                            <option>Français</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Zona Horaria</label>
+                        <select class="form-input">
+                            <option>(GMT+01:00) Madrid</option>
+                            <option>(GMT+00:00) Londres</option>
+                            <option>(GMT-05:00) Nueva York</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">
+                            <input type="checkbox" checked> Recibir notificaciones por email
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">
+                            <input type="checkbox" checked> Perfil público
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar Preferencias</button>
+                </form>
+            </div>
+        `
+    };
 
-        // Función para cambiar el contenido del iframe
-        function cambiarPagina(pagina) {
-            // Actualizar navegación
-            document.querySelectorAll('.profile-nav-link').forEach(link => {
-                link.classList.remove('active');
-            });
-            event.currentTarget.classList.add('active');
+    // Función para cambiar el contenido
+    function cambiarPagina(pagina) {
+        // Actualizar navegación
+        document.querySelectorAll('.profile-nav-link').forEach(link => {
+            link.classList.remove('active');
+        });
+        event.target.classList.add('active');
 
-            // Cambiar contenido del iframe
-            const iframe = document.getElementById('contenido');
-            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-            
-            iframeDoc.open();
-            iframeDoc.write(`
-                <!DOCTYPE html>
-                <html>
-                <head>
-                    <style>
-                        ${document.querySelector('style').textContent}
-                    </style>
-                </head>
-                <body>
-                    ${paginas[pagina]}
-                </body>
-                </html>
-            `);
-            iframeDoc.close();
-        }
+        // Cambiar contenido
+        document.getElementById('content-area').innerHTML = paginas[pagina];
+    }
 
-        // Cargar la página inicial
-        window.onload = () => cambiarPagina('general');
-    </script>
+    // Cargar la página inicial
+    window.onload = () => cambiarPagina('general');
+</script>
 <script src="../js/notificacion.js"></script>
 </body>
 </html>
