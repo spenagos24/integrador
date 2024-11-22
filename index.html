@@ -16,29 +16,19 @@
         <div class="form-container sign-up">
             <form>
                 <h1>Crear una cuenta</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
+
                 <span>Utilice su correo electrónico para registrarse</span>
-                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Nombre" required>
                 <input type="text" placeholder="Usuario">
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Contraseña">
-                <button>Registrarme</button>
+                <button type="submit">Registrarme</button>
             </form>
         </div>
         <div class="form-container sign-in">
             <form>
                 <h1>Iniciar Sesión</h1>
-                <div class="social-icons">
-                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
+
                 <span>¡Ingresa de manera segura!</span>
                 <input type="text" placeholder="Nombre">
                 <input type="password" placeholder="Contraseña">
@@ -46,9 +36,10 @@
                     <option>Administrador</option>
                     <option>Mecanico</option>
                     <option>Control Calidad</option>
-                    </select>
+                </select>
                 <a href="src/html/recuperar_contraseña.html">Olvidaste tu contraseña?</a>
-                <button type="submit" onclick="location.href='../html/caja.html'"><a href="src/html/inicio.html">Iniciar Sesión</a></button>
+                <button type="button" onclick="location.href='/src/html/inicio.html'">Iniciar Sesión</button>
+
             </form>
         </div>
         <div class="toggle-container">
@@ -71,4 +62,3 @@
 </body>
 
 </html>
-

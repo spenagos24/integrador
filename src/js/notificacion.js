@@ -1,16 +1,16 @@
-var box = document.getElementById('box');
 var down = false;
 
 function toggleNotifi() {
+    var box = document.getElementById('box');  // Asegúrate de que box está definido correctamente
     if (down) {
-        box.style.display = 'none';  // Oculta la caja de notificaciones
+        box.style.height  = '0px';
         box.style.opacity = 0;
+        box.style.display = 'none';  // Oculta la caja
         down = false;
     } else {
-        box.style.display = 'block';  // Muestra la caja de notificaciones
-        setTimeout(function() {
-            box.style.opacity = 1; // Aplica opacidad con un pequeño retraso
-        }, 10); // Para que la transición de opacidad se vea bien
+        box.style.height  = 'auto';
+        box.style.opacity = 1;
+        box.style.display = 'block';  // Muestra la caja
         down = true;
     }
 }

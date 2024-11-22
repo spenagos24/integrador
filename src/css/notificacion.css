@@ -528,12 +528,19 @@
 }
 
 .search-bar::before {
-    content: '🔍';
+  content: "\f0e2"; /* Código Unicode para el ícono de lupa (fa-search regular) */
+  font-family: "Font Awesome 6 Free"; /* Fuente de Font Awesome */
+  font-weight: 400; /* Peso para los íconos regulares (más delgados) */
+  font-size: 24px; /* Ajusta el tamaño del ícono */
+  display: inline-block; 
     position: absolute;
-    left: 1rem;
+ 
     top: 50%;
     transform: translateY(-50%);
     color: var(--text-secondary);
+    border: 2px solid red;
+color: black;
+
 }
 
 .filters {

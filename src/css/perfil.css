@@ -33,6 +33,11 @@
     flex-direction: column;
     height: 100vh;
     min-height: 100vh;
+    background-image: url(../img/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
    /* background-color: var(--color-navbar)*/ 
     
    
@@ -494,7 +499,8 @@ iframe {
 
 /* Páginas dentro del iframe */
 .page-container {
-    padding: 2rem;
+    padding: 2rem 2rem;
+
 }
 
 .page-title {
@@ -505,7 +511,7 @@ iframe {
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: rem;
     margin-left: 20px;
     border: 2px solid red;
 }

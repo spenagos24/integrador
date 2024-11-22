@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <!--iconos bostrap-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="../css/perfil.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -141,7 +144,7 @@
   <div class="container">
     <!-- Sidebar con perfil -->
     <aside class="profile-sidebar">
-        <img src="/api/placeholder/150/150" alt="Foto de perfil" class="profile-image">
+        <img src="../img/foto_perfil.jpg" alt="Foto de perfil" class="profile-image">
         <h1 class="profile-name">Alex Johnson</h1>
         <p class="profile-email">alex.johnson@ejemplo.com</p>
         
@@ -197,7 +200,7 @@
             </div>
         `,
         editar: `
-            <div class="page-container">
+            <div class="page-container ojo">
                 <h2 class="page-title">Editar Perfil</h2>
                 <form>
                     <div class="form-group">
@@ -292,5 +295,8 @@
     window.onload = () => cambiarPagina('general');
 </script>
 <script src="../js/notificacion.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
